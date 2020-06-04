@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Enable all scripts to become executable') {
             steps {
-                sh 'chmod +x /scripts/*'
+                sh 'chmod +x ./scripts/*'
             }
         }
         stage('Get the environment ready') {
