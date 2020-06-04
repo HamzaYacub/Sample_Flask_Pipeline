@@ -16,7 +16,8 @@ pipeline {
         }
         stage('Run the application') {
             steps {
-                sh 'sudo systemctl reload flask.service'
+                sh 'sudo systemctl restart flask.service'
+                sh 'sudo systemctl status flask.service'
             }
         }
     }
