@@ -1,0 +1,9 @@
+[Unit]
+Description=Sample_Flask_Pipeline_Application
+
+[Service]
+User=jenkins
+ExecStart=/var/lib/jenkins/workspace/sample/scripts/afterinstallation.sh
+
+[Install]
+WantedBy=multi-user.target
